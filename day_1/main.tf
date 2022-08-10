@@ -26,7 +26,7 @@ provider "aws" {
 resource "aws_instance" "web-server" {
   ami           = "ami-090fa75af13c156b4"
   instance_type = "t2.nano"
-  key_name = "virgin"
+  key_name = "xxxxxxxxxx"
 
   tags = {
     Name = "my_server"

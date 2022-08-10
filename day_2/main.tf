@@ -20,7 +20,7 @@ resource "aws_instance" "web-server" {
   ami = var.ec2-ami
   #ami           = "ami-08d4ac5b634553e16"
   instance_type = local.mytype
-  key_name      = "virgin"
+  key_name      = "xxxxxxxxxx"
   tags = {
     Name = "${local.mytag}-instance"
   }

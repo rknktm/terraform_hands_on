@@ -1,0 +1,1 @@
+ec2-name = "devops-webim"

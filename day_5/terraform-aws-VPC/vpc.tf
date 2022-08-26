@@ -129,3 +129,7 @@ resource "aws_route_table_association" "f" {
   subnet_id      = aws_subnet.Private3.id
   route_table_id = aws_route_table.myTF-Prrt.id
 }
+resource "aws_main_route_table_association" "mainrt" {
+  vpc_id         = aws_vpc.myTF-vpc.id
+  route_table_id = aws_route_table.myTF-Purt.id
+}
